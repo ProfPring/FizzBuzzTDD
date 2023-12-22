@@ -9,33 +9,33 @@ namespace FizzBuzzTDD.Helpers
 {
     public class FizBuzzHelper : IFizBuzzHelper
     {
-        public string IsDivisibleByFive(int number)
+        public bool IsDivisibleByFive(int number)
         {
             if (number % 5 == 0)
             {
-                return "Buzz";
+                return true;
             }
 
-            return number.ToString();
+            return false;
         }
 
-        public string IsDivisibleByThree(int number)
+        public bool IsDivisibleByThree(int number)
         {
             if (number % 3 == 0)
             {
-                return "Fizz";
+                return true; 
             }
 
-            return number.ToString();
+            return false;
         }
 
-        public string IsDivisiblebyThreeAndFive(int number)
+        public bool IsDivisiblebyThreeAndFive(int number)
         {
             if (number % 3 == 0 && number % 5 == 0)
             {
-                return "Fizzbuzz";
+                return true;
             }
-            return number.ToString();
+            return false;
         }
     }
 }

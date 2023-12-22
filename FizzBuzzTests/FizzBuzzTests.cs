@@ -29,7 +29,7 @@ namespace FizzBuzzTests
             var output = _fizBuzzHelper.IsDivisibleByThree(3);
 
             // Assert
-            Assert.That(output, Is.EqualTo("Fizz"));
+            Assert.That(output, Is.True);
         }
 
         [Test]
@@ -39,7 +39,7 @@ namespace FizzBuzzTests
             var output = _fizBuzzHelper.IsDivisibleByFive(5);
 
             // Assert
-            Assert.That(output, Is.EqualTo("Buzz"));
+            Assert.That(output, Is.True);
 
         }
 
@@ -50,7 +50,7 @@ namespace FizzBuzzTests
             var output = _fizBuzzHelper.IsDivisiblebyThreeAndFive(15);
 
             // Assert
-            Assert.That(output, Is.EqualTo("Fizzbuzz"));
+            Assert.That(output, Is.True);
         }
 
         [Test]
@@ -60,7 +60,7 @@ namespace FizzBuzzTests
             var output = _fizBuzzHelper.IsDivisiblebyThreeAndFive(8);
 
             // Assert
-            Assert.That(output, Is.EqualTo("8"));
+            Assert.That(output, Is.False);
         }
     }
 }
