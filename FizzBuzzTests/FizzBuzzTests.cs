@@ -18,6 +18,7 @@ namespace FizzBuzzTests
 
         public FizzBuzzTests()
         {
+            // Arrange
             _fizBuzzHelper = new FizBuzzHelper();
         }
 
@@ -34,36 +35,32 @@ namespace FizzBuzzTests
         [Test]
         public void FizzBuzz_GenerateOutput_DivisibleBy5()
         {
-            // Arrange
-
-            // Act
-            
+            //Act
+            var output = _fizBuzzHelper.IsDivisibleByFive(5);
 
             // Assert
-            
+            Assert.That(output, Is.EqualTo("Buzz"));
+
         }
 
         [Test]
         public void FizzBuzz_GenerateOutput_DivisibleBy3And5()
         {
-            // Arrange
-
-            // Act
-            
+            //Act
+            var output = _fizBuzzHelper.IsDivisiblebyThreeAndFive(15);
 
             // Assert
+            Assert.That(output, Is.EqualTo("Fizzbuzz"));
         }
 
         [Test]
         public void FizzBuzz_GenerateOutput_NotDivisibleBy3Or5()
         {
-            // Arrange
-            
-
-            // Act
-            
+            //Act
+            var output = _fizBuzzHelper.IsDivisiblebyThreeAndFive(8);
 
             // Assert
+            Assert.That(output, Is.EqualTo("8"));
         }
     }
 }

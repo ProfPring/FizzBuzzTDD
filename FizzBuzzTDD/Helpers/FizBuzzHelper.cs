@@ -11,12 +11,7 @@ namespace FizzBuzzTDD.Helpers
     {
         public string IsDivisibleByFive(int number)
         {
-            throw new NotImplementedException();
-        }
-
-        public string IsDivisibleByThree(int number)
-        {
-            if (number % 3 == 0)
+            if (number % 5 == 0)
             {
                 return "Buzz";
             }
@@ -24,9 +19,23 @@ namespace FizzBuzzTDD.Helpers
             return number.ToString();
         }
 
+        public string IsDivisibleByThree(int number)
+        {
+            if (number % 3 == 0)
+            {
+                return "Fizz";
+            }
+
+            return number.ToString();
+        }
+
         public string IsDivisiblebyThreeAndFive(int number)
         {
-            throw new NotImplementedException();
+            if (number % 3 == 0 && number % 5 == 0)
+            {
+                return "Fizzbuzz";
+            }
+            return number.ToString();
         }
     }
 }
