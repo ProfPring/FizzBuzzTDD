@@ -1,0 +1,15 @@
+C:\Users\Sam\source\repos\FizzBuzzTDD\FizzBuzzTDD\bin\Debug\net6.0\FizzBuzzTDD.exe
+C:\Users\Sam\source\repos\FizzBuzzTDD\FizzBuzzTDD\bin\Debug\net6.0\FizzBuzzTDD.deps.json
+C:\Users\Sam\source\repos\FizzBuzzTDD\FizzBuzzTDD\bin\Debug\net6.0\FizzBuzzTDD.runtimeconfig.json
+C:\Users\Sam\source\repos\FizzBuzzTDD\FizzBuzzTDD\bin\Debug\net6.0\FizzBuzzTDD.dll
+C:\Users\Sam\source\repos\FizzBuzzTDD\FizzBuzzTDD\bin\Debug\net6.0\FizzBuzzTDD.pdb
+C:\Users\Sam\source\repos\FizzBuzzTDD\FizzBuzzTDD\obj\Debug\net6.0\FizzBuzzTDD.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sam\source\repos\FizzBuzzTDD\FizzBuzzTDD\obj\Debug\net6.0\FizzBuzzTDD.AssemblyInfoInputs.cache
+C:\Users\Sam\source\repos\FizzBuzzTDD\FizzBuzzTDD\obj\Debug\net6.0\FizzBuzzTDD.AssemblyInfo.cs
+C:\Users\Sam\source\repos\FizzBuzzTDD\FizzBuzzTDD\obj\Debug\net6.0\FizzBuzzTDD.csproj.CoreCompileInputs.cache
+C:\Users\Sam\source\repos\FizzBuzzTDD\FizzBuzzTDD\obj\Debug\net6.0\FizzBuzzTDD.sourcelink.json
+C:\Users\Sam\source\repos\FizzBuzzTDD\FizzBuzzTDD\obj\Debug\net6.0\FizzBuzzTDD.dll
+C:\Users\Sam\source\repos\FizzBuzzTDD\FizzBuzzTDD\obj\Debug\net6.0\refint\FizzBuzzTDD.dll
+C:\Users\Sam\source\repos\FizzBuzzTDD\FizzBuzzTDD\obj\Debug\net6.0\FizzBuzzTDD.pdb
+C:\Users\Sam\source\repos\FizzBuzzTDD\FizzBuzzTDD\obj\Debug\net6.0\FizzBuzzTDD.genruntimeconfig.cache
+C:\Users\Sam\source\repos\FizzBuzzTDD\FizzBuzzTDD\obj\Debug\net6.0\ref\FizzBuzzTDD.dll

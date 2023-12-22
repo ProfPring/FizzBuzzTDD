@@ -9,17 +9,22 @@ namespace FizzBuzzTDD.Helpers
 {
     public class FizBuzzHelper : IFizBuzzHelper
     {
-        public string IsDivisibleByFive()
+        public string IsDivisibleByFive(int number)
         {
             throw new NotImplementedException();
         }
 
-        public string IsDivisibleByThree()
+        public string IsDivisibleByThree(int number)
         {
-            throw new NotImplementedException();
+            if (number % 3 == 0)
+            {
+                return "Buzz";
+            }
+
+            return number.ToString();
         }
 
-        public string IsDivisiblebyThreeAndFive()
+        public string IsDivisiblebyThreeAndFive(int number)
         {
             throw new NotImplementedException();
         }

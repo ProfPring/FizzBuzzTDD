@@ -8,12 +8,12 @@ namespace FizzBuzzTDD.Helpers.Interfaces
 {
     public interface IFizBuzzHelper
     {
-        public string IsDivisibleByThree();
+        public string IsDivisibleByThree(int number);
 
 
-        public string  IsDivisibleByFive();
+        public string  IsDivisibleByFive(int number);
 
 
-        public string IsDivisiblebyThreeAndFive();
+        public string IsDivisiblebyThreeAndFive(int number);
     }
 }

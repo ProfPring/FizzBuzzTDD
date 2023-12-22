@@ -1,4 +1,7 @@
-﻿using Microsoft.VisualStudio.TestPlatform.Utilities;
+﻿using FizzBuzzTDD.Helpers;
+using FizzBuzzTDD.Helpers.Interfaces;
+using Microsoft.VisualStudio.TestPlatform.Utilities;
+using Moq;
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;
@@ -11,24 +14,21 @@ namespace FizzBuzzTests
     [TestFixture]
     public class FizzBuzzTests
     {
+        private readonly IFizBuzzHelper _fizBuzzHelper;
+
         public FizzBuzzTests()
         {
-
+            _fizBuzzHelper = new FizBuzzHelper();
         }
 
         [Test]
         public void FizzBuzz_GenerateOutput_DivisibleBy3()
         {
-            // Arrange
-            
-
             // Act
-            string output = fizzBuzzGenerator.GenerateFizzBuzzOutput(9, 9); // 9 is divisible by 3
-            consoleOutput.Print(output);
+            var output = _fizBuzzHelper.IsDivisibleByThree(3);
 
             // Assert
-            string[] outputLines = consoleOutputString.ToString().Split(Environment.NewLine, StringSplitOptions.RemoveEmptyEntries);
-            Assert.AreEqual("Fizz", outputLines[0]);
+            Assert.That(output, Is.EqualTo("Fizz"));
         }
 
         [Test]
@@ -37,12 +37,10 @@ namespace FizzBuzzTests
             // Arrange
 
             // Act
-            string output = fizzBuzzGenerator.GenerateFizzBuzzOutput(10, 10); // 10 is divisible by 5
-            consoleOutput.Print(output);
+            
 
             // Assert
-            string[] outputLines = consoleOutputString.ToString().Split(Environment.NewLine, StringSplitOptions.RemoveEmptyEntries);
-            Assert.AreEqual("Buzz", outputLines[0]);
+            
         }
 
         [Test]
@@ -51,12 +49,9 @@ namespace FizzBuzzTests
             // Arrange
 
             // Act
-            string output = fizzBuzzGenerator.GenerateFizzBuzzOutput(15, 15); // 15 is divisible by both 3 and 5
-            consoleOutput.Print(output);
+            
 
             // Assert
-            string[] outputLines = consoleOutputString.ToString().Split(Environment.NewLine, StringSplitOptions.RemoveEmptyEntries);
-            Assert.AreEqual("FizzBuzz", outputLines[0]);
         }
 
         [Test]
@@ -66,12 +61,9 @@ namespace FizzBuzzTests
             
 
             // Act
-            string output = fizzBuzzGenerator.GenerateFizzBuzzOutput(7, 7); // 7 is not divisible by 3 or 5
-            consoleOutput.Print(output);
+            
 
             // Assert
-            string[] outputLines = consoleOutputString.ToString().Split(Environment.NewLine, StringSplitOptions.RemoveEmptyEntries);
-            Assert.AreEqual("7", outputLines[0]);
         }
     }
 }
